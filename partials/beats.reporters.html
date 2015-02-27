@@ -1,9 +1,17 @@
 <div ng-show="beat.reporters.length">
   <h2>Reporter list for {{ beat.name }}</h2>
+  <p>( Click to display further info about that reporter )</p>
   <ul>
     <li ng-repeat="item in beat.reporters">
-      <span ng-click="display = true" ng-hide
+      <span ng-click="display = true">
         {{ item.name }}
+      </span>
+      <br>
+      <span ng-show="display" ng-click="display = false">
+        {{item.yearsEmployed}} <br>
+        {{item.birthday}} <br>
+        <p>( Click info to hide )</p>
+      </span>
     </li>
   </ul>
 </div>
