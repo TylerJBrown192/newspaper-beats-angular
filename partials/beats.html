@@ -1,7 +1,17 @@
+<div class="col-md-12">
+  <h4>Search News Topics</h4>
+
+  <form class="form-inline" role="form">
+    <div class-"form-group">
+      <input ng-model="query" type="text" class="form-control" placeholder="Search">
+    </div>
+  </form>
+</div>
+
 <div ng-show="beats.length">
   <h1>Beats n Stuff</h1>
   <ul>
-    <li ng-repeat="item in beats">
+    <li ng-repeat="item in beats | filter:query">
       <a ui-sref="beats.reporters({ beatId: item.id })">{{ item.name }}</a>
     </li>
   </ul>
