@@ -1,0 +1,17 @@
+.reporters {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.reporters:hover {
+  text-decoration: underline;
+}
+
+.beats {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.beats:hover {
+  text-decoration: underline;
+}

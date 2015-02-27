@@ -12,7 +12,7 @@
   <h1>Beats n Stuff</h1>
   <ul>
     <li ng-repeat="item in beats | filter:query">
-      <a ui-sref="beats.reporters({ beatId: item.id })">{{ item.name }}</a>
+      <a ui-sref="beats.reporters({ beatId: item.id })" class="beats">{{ item.name }}</a>
     </li>
   </ul>
 </div>

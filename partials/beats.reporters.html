@@ -3,13 +3,11 @@
   <p>( Click to display further info about that reporter )</p>
   <ul>
     <li ng-repeat="item in beat.reporters">
-      <span ng-click="display = true">
-        {{ item.name }}
-      </span>
+      <span ng-click="display = true" class="reporters">{{ item.name }}</span>
       <br>
       <span ng-show="display" ng-click="display = false">
-        {{item.yearsEmployed}} <br>
-        {{item.birthday}} <br>
+        {{item.yearsEmployed}}<br>
+        {{item.birthday}}<br>
         <p>( Click info to hide )</p>
       </span>
     </li>
